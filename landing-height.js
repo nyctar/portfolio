@@ -1,18 +1,17 @@
 function adjustLandingHeight() {
   const header = document.querySelector('header');
+  const scrollText = document.querySelector('.scrolling-text');
   const nav = document.querySelector('nav');
-  const landing = document.querySelector('#landing');
-  const scrolling = document.querySelector('#scrolling'); // updated to wrap the scrolling-text section
+  const landing = document.getElementById('landing');
 
-  if (header && nav && landing && scrolling) {
-    const headerHeight = header.offsetHeight;
-    const navHeight = nav.offsetHeight;
-    const scrollingHeight = scrolling.offsetHeight;
+  const headerHeight = header.offsetHeight;
+  const scrollHeight = scrollText.offsetHeight;
+  const navHeight = nav.offsetHeight;
 
-    const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
-    const landingHeight = Math.max(viewportHeight - headerHeight - navHeight - scrollingHeight, 200);
-    landing.style.height = `${landingHeight}px`;
-  }
+  const totalOffset = headerHeight + scrollHeight + navHeight;
+  const landingHeight = window.innerHeight - totalOffset;
+
+  landing.style.height = `${landingHeight}px`;
 }
 
 window.addEventListener('load', adjustLandingHeight);

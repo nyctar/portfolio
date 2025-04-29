@@ -68,7 +68,7 @@ header {
 
 .overlay-text {
     position: absolute;
-    bottom: 0.5vw;
+    bottom: clamp(0.5rem, 1vw, 1vw);
     left: 50%;
     transform: translateX(-50%);
     width: 96%;

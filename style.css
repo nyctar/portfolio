@@ -13,6 +13,7 @@ html, body {
     color: #EAEAEA;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 body {
@@ -46,12 +47,14 @@ header {
 #landing {
     flex: 1;
     position: relative;
+    width: 100%;
+    min-height: calc(100vh - 11vw - 6vh);
 }
 
 #canvas-container {
     position: relative;
     width: 100%;
-    height: calc(100vh - 11vw - 6vh);
+    height: 100%;
     overflow: hidden;
     z-index: 0;
 }

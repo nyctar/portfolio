@@ -9,9 +9,8 @@ function adjustLandingHeight() {
     const navHeight = nav.offsetHeight;
     const scrollingHeight = scrolling.offsetHeight;
 
-    const viewportHeight = window.innerHeight;
-    const landingHeight = Math.max(viewportHeight - headerHeight - navHeight - scrollingHeight, 200); 
-
+    const viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+    const landingHeight = Math.max(viewportHeight - headerHeight - navHeight - scrollingHeight, 200);
     landing.style.height = `${landingHeight}px`;
   }
 }

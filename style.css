@@ -20,6 +20,13 @@ body {
     padding-bottom: 2rem;
 }
 
+/* hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 /* header */
 header {
     width: 100%;
@@ -45,19 +52,15 @@ header {
 
 /* p5 background */
 #landing {
-    flex: 1;
     position: relative;
-    width: 100%;
-    min-height: calc(100vh - 11vw - 6vh);
+    height: 76vh;
 }
-
-#canvas-container {
-    position: relative;
-    width: 100%;
+  
+  #canvas-container {
+    position: absolute;
     height: 100%;
-    overflow: hidden;
-    z-index: 0;
-}
+    width: 100%;
+  }
 
 .overlay-text {
     position: absolute;
@@ -90,7 +93,7 @@ header {
 /* scrolling text */
 .scrolling-text {
     background-color: #EAEAEA;
-    height: clamp(1.5rem, 3vw, 100rem);
+    height: clamp(1.5rem, 3vw, 12rem);
     color: #0125B7;
     overflow: hidden;
     white-space: nowrap;
@@ -105,7 +108,7 @@ header {
 }
   
 .scrolling-text span {
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 2vw, 12rem);
     font-family: "Space Grotesk", Helvetica, sans-serif;
     margin: 0 clamp(1rem, 3vw, 3rem);
 }
@@ -177,24 +180,17 @@ nav a {
 .nav-home:hover {
     background-color: #EAEAEA;
     color: #0125B7;
+    font-weight: bold;
 }
 
 .nav-highlights:hover {
     background-color: #EAEAEA;
     color: #0F3AE6;
+    font-weight: bold;
 }
 
 .nav-projects:hover {
     background-color: #EAEAEA;
     color: #2C54F2;
-}
-
-/* text for small screens */
-@media (max-width: 600px) {
-    main h1 {
-        font-size: 2rem;
-    }
-    header {
-        font-size: 1rem;
-    }
+    font-weight: bold;
 }

@@ -14,17 +14,11 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
 }
 
 html {
     scroll-padding-bottom: 4rem;
-  }
-
-.scroll-snap-div {
-    scroll-snap-align: start;
-    min-height: 100vh;
 }
 
 /* hero */
@@ -260,6 +254,9 @@ header {
     font-family: "Syncopate", Helvetica, sans-serif;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
+}
+.projects {
+    padding: 1.5vw;
 }
   
 

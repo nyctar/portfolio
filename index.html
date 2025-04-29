@@ -16,18 +16,22 @@
     <!-- scripts -->
     <script src="background.js"></script>
     <script src="landing-height.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="logos/asterisk.svg">
 </head>
 <body>
-    <div class="hero">
+    <div class="hero" id="hero">
         <header>
             <div class="header-text">
                 <div class="header-line">Uplifting Stories Behind Data With</div>
-                <div class="header-line">Computational Thinking and Visual Storytelling</div>
+                <div class="header-line"><span class="header-keyword"  id="computational">Computational</span> Thinking and <span class="header-keyword" id="visual">Visual</span> Storytelling</div>
             </div>
         </header>
 
         <section id="landing">
             <div id="canvas-container"></div>
+            <img src="logos/asterisk.svg" alt="logo" class="logo-top-right">
             <div class="overlay-text">
                 <div class="overlay-line" id="overlay-line-1">Yestin Arvin</div>
                 <div class="overlay-line" id="overlay-line-2">Gochuico</div>
@@ -48,45 +52,42 @@
         </section>
         
         <nav>
-            <a href="#" class="nav-home">Home</a>
-            <a href="#" class="nav-highlights">Highlights</a>
-            <a href="#" class="nav-projects">Projects</a>
+            <a href="#hero" class="nav-home">Home</a>
+            <a href="#highlights" class="nav-highlights">Highlights</a>
+            <a href="#projects" class="nav-projects">Projects</a>
         </nav>
     </div>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about-content">
-            <h2>About Me</h2>
+            <h1>About Me</h1>
             <p>
-            I’m Yestin Arvin Gochuico — a data scientist and creative technologist passionate about uncovering stories through data, design, and computation. My work spans AI, visualization, and experimental interfaces.
+                “What story do you want to tell?”
             </p>
             <p>
-            Previously at Snap Inc. and Yonsei University's Space & Design IT Lab, I'm currently studying Data Science & AI at the University of Miami.
+                Every project I make, I ask myself this question first. As a creative technologist passionate for data science and visualization, I always try to be intentional &#8212; to see the lived experiences behind the numbers.
+            </p>
+            <p>
+                I’ve dabbled in different areas of technology: Data Science, XR Development, Interaction Design, and others. But, recently, I’ve been specializing on Data Visualization. I’m interested in understanding how to best represent the nature of data through visual encoding.
+            </p>
+            <p>
+                Currently, I work as a Teaching Assistant at Extern, supporting tech-related externships that make college students ready for the industry.
+            </p>
+            <p>
+                See quotes that I’ve lived by throughout my career journey:
             </p>
         </div>
     </section>
 
-    <section class="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>
-            I’m Yestin Arvin Gochuico — a data scientist and creative technologist passionate about uncovering stories through data, design, and computation. My work spans AI, visualization, and experimental interfaces.
-            </p>
-            <p>
-            Previously at Snap Inc. and Yonsei University's Space & Design IT Lab, I'm currently studying Data Science & AI at the University of Miami.
-            </p>
+    <section class="highlights" id="highlights">
+        <div class="highlights-content">
+            <h1>Highlights</h1>
         </div>
     </section>
 
-    <section class="about">
-        <div class="about-content">
-            <h2>About Me</h2>
-            <p>
-            I’m Yestin Arvin Gochuico — a data scientist and creative technologist passionate about uncovering stories through data, design, and computation. My work spans AI, visualization, and experimental interfaces.
-            </p>
-            <p>
-            Previously at Snap Inc. and Yonsei University's Space & Design IT Lab, I'm currently studying Data Science & AI at the University of Miami.
-            </p>
+    <section class="projects" id="projects">
+        <div class="projects-content">
+            <h1>Projects</h1>
         </div>
     </section>
 </body>

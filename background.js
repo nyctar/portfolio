@@ -21,7 +21,7 @@ function setup() {
         color('#0F3AE6'),
         color('#2C54F2')
     ];
-    hoverColor = color('#EAEAEA');
+    hoverColor = color('#FF7A00');
 }
 
 function draw() {

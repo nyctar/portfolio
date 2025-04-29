@@ -6,12 +6,12 @@
     <title>Yestin Arvin Gochuico</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- libraries -->
+    <!-- libraries & embeds -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Staatliches&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- scripts -->
     <script src="background.js"></script>
@@ -21,7 +21,7 @@
     <link rel="icon" type="image/svg+xml" href="logos/asterisk.svg">
 </head>
 <body>
-    <div class="hero" id="hero">
+    <div class="scroll-snap-div hero" id="hero">
         <header>
             <div class="header-text">
                 <div class="header-line">Uplifting Stories Behind Data With</div>
@@ -58,37 +58,109 @@
         </nav>
     </div>
 
-    <section class="about" id="about">
+    <section class="scroll-snap-div about" id="about">
         <div class="about-content">
             <h1>About Me</h1>
             <p>
-                “What story do you want to tell?”
+                Every project I make, I ask myself this question first. 
+            </p>
+            <p class="about-quote-block">
+                <span id="about-quote">“What story do you want to tell?”<span>
             </p>
             <p>
-                Every project I make, I ask myself this question first. As a creative technologist passionate for data science and visualization, I always try to be intentional &#8212; to see the lived experiences behind the numbers.
+                As a <span class="about-keyword">creative technologist</span> specializing on <span class="about-keyword">Data Science & Visualization</span>,
+                I’m interested in understanding how to best represent the nature of data
+                through visual encoding with intention — to see the lived experiences behind the numbers.
             </p>
             <p>
-                I’ve dabbled in different areas of technology: Data Science, XR Development, Interaction Design, and others. But, recently, I’ve been specializing on Data Visualization. I’m interested in understanding how to best represent the nature of data through visual encoding.
+                I’ve also gained transferrable skills by dabbling in different areas of technology, XR Development, Game Development, Interaction Design,
+                and others. Currently, I work as a Teaching Assistant at Extern, supporting tech-related externships that
+                aim to make college students ready for the industry.
             </p>
             <p>
-                Currently, I work as a Teaching Assistant at Extern, supporting tech-related externships that make college students ready for the industry.
+                If you're interested in working with me, hit me up!
             </p>
             <p>
-                See quotes that I’ve lived by throughout my career journey:
+
             </p>
         </div>
     </section>
 
-    <section class="highlights" id="highlights">
+    <section class="scroll-snap-div highlights" id="highlights">
         <div class="highlights-content">
-            <h1>Highlights</h1>
+          <h1>HIGHLIGHTS</h1>
+          <!-- start of wrapper -->
+
+          <div class="highlight-item">
+            <div class="highlight-img"></div>
+            <div class="highlight-text">
+              <p class="highlight-date">Description – Date</p>
+              <h2 class="highlight-name">Project Name</h2>
+              <p class="highlight-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a href="#" class="highlight-link">LEARN MORE</a>
+            </div>
+          </div>
+      
+          <div class="highlight-item">
+            <div class="highlight-img"></div>
+            <div class="highlight-text">
+              <p class="highlight-date">Description – Date</p>
+              <h2 class="highlight-name">Project Name</h2>
+              <p class="highlight-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a href="#" class="highlight-link">LEARN MORE</a>
+            </div>
+          </div>
+
+          <div class="highlight-item">
+            <div class="highlight-img"></div>
+            <div class="highlight-text">
+              <p class="highlight-date">Description – Date</p>
+              <h2 class="highlight-name">Project Name</h2>
+              <p class="highlight-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a href="#" class="highlight-link">LEARN MORE</a>
+            </div>
+          </div>
+
+          <div class="highlight-item">
+            <div class="highlight-img"></div>
+            <div class="highlight-text">
+              <p class="highlight-date">Description – Date</p>
+              <h2 class="highlight-name">Project Name</h2>
+              <p class="highlight-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a href="#" class="highlight-link">LEARN MORE</a>
+            </div>
+          </div>
+
+          <!-- end of wrapper -->
+        </div>
         </div>
     </section>
+      
 
-    <section class="projects" id="projects">
-        <div class="projects-content">
-            <h1>Projects</h1>
+    <section class="scroll-snap-div projects" id="projects">
+    <div class="projects-content">
+        <h1>PROJECTS</h1>
+        <div class="projects-grid">
+        <div class="project-item span-2">
+            <div class="overlay">
+            <p>Description – Date</p>
+            <h2>Project Name</h2>
+            <span>On Hover</span>
+            </div>
         </div>
+        <div class="project-item"></div>
+        <div class="project-item"></div>
+        <div class="project-item"></div>
+        </div>
+    </div>
     </section>
 </body>
 </html>

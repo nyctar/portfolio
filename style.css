@@ -14,12 +14,18 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
 }
 
 html {
-    scroll-behavior: smooth;
     scroll-padding-bottom: 4rem;
   }
+
+.scroll-snap-div {
+    scroll-snap-align: start;
+    min-height: 100vh;
+}
 
 /* hero */
 .hero {
@@ -53,6 +59,7 @@ header {
 .header-keyword {
     color: #FF7A00;
 }
+
 /* landing */
 #landing {
     position: relative;
@@ -133,28 +140,46 @@ header {
 }
 
 /* about */
-.about {
-    background-color: #0125B7;
-    padding: 6rem 2rem;
-    display: flex;
-    justify-content: center;
-}
-
-.about-content {
-    width: 100%;
-    max-width: 800px;
-    font-family: "Space Grotesk", Helvetica, sans-serif;
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    line-height: 1.6;
-    text-align: left;
-    color: #EAEAEA;
-}
-
 .about-content h1 {
     font-size: clamp(2rem, 4vw, 3rem);
     font-family: "Syncopate", Helvetica, sans-serif;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
+}
+
+.about-content {
+    width: 100%;
+    font-family: "Space Grotesk", Helvetica, sans-serif;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.5;
+    text-align: left;
+    color: #EAEAEA;
+}
+
+.about {
+    background-color: #0125B7;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.about-quote-block {
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 4px solid #EAEAEA;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+    color: #EAEAEA;
+  }
+
+  
+#about-quote {
+    font-family: "Staatliches", Helvetica, sans-serif;
+    font-size: 2rem;
+}
+.about-keyword {
+    font-weight: bold;
 }
 
 /* highlights */
@@ -165,6 +190,70 @@ header {
     text-transform: uppercase;
 }
 
+.highlights-content {
+    width: 100%;
+}
+
+.highlights {
+    background-color: #0F3AE6;
+    padding: 1.5vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.highlight-item {
+    display: flex;
+    background-color: #F8EBE6;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.highlight-img {
+    flex: 1 1 250px;
+    aspect-ratio: 16 / 9;
+    background-color: #F1DCD5;
+    background-size: cover;
+    background-position: center;
+}
+
+.highlight-text {
+    flex: 2 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Space Grotesk", Helvetica, sans-serif;
+    color: #000;
+}
+
+.highlight-date {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.highlight-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 0.75rem;
+}
+
+.highlight-desc {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.highlight-link {
+    font-family: "Staatliches", Helvetica, sans-serif;
+    color: #2C54F2;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+
 /* projects */
 .projects-content h1 {
     font-size: clamp(2rem, 4vw, 3rem);
@@ -172,6 +261,7 @@ header {
     margin-bottom: 1.5rem;
     text-transform: uppercase;
 }
+  
 
 /* navbar */
 nav {
@@ -225,6 +315,7 @@ nav a {
     font-weight: bold;
 }
 
+/* scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
   }

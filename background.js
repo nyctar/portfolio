@@ -10,12 +10,6 @@ function setup() {
     let canvas = createCanvas(container.offsetWidth, container.offsetHeight);
     canvas.parent("canvas-container");
 
-    canvas.style('display', 'block');
-    canvas.style('position', 'absolute');
-    canvas.style('z-index', '0');
-    canvas.style('top', '0');
-    canvas.style('left', '0');
-
     noStroke();
     rectMode(CENTER);
 

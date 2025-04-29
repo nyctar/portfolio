@@ -54,13 +54,17 @@ header {
 #landing {
     position: relative;
     height: 76vh;
+    min-height: 0;
 }
-  
-  #canvas-container {
+
+#canvas-container {
     position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
-  }
+    z-index: 0;
+}
 
 .overlay-text {
     position: absolute;

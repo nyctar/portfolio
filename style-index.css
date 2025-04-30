@@ -349,13 +349,13 @@ header {
     background-color: #EAEAEA;
     color: #0125B7;
     font-family: "Space Grotesk", sans-serif;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(0.8rem, 2vw, 2rem);
     line-height: 1.5;
 }
 
 .footer-email {
     display: inline-block;
-    font-size: clamp(1.25rem, 4vw, 5rem);
+    font-size: clamp(0.9rem, 4vw, 5rem);
     font-weight: bold;
     color: #0125B7;
     text-decoration: none;
@@ -373,7 +373,7 @@ header {
 .footer-right a {
     text-decoration: none;
     color: #0125B7;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(0.8rem, 2vw, 2rem);
     font-weight: normal;
     transition: color 0.3s ease;
 }

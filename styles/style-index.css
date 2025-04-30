@@ -148,7 +148,7 @@ header {
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(0.8rem, 2.6vw, 1.5rem);
     line-height: clamp(1, 2vw, 1.7);
-    text-align: justify;
+    text-align: left;
 }
 
 .about-wrapper {

@@ -142,11 +142,11 @@ header {
     background-color: #0125B7;
     align-items: center;
     justify-content: center;
-    padding: 3rem;
+    padding: 1.5rem;
     box-sizing: border-box;
     color: #EAEAEA;
     font-family: "Space Grotesk", sans-serif;
-    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-size: clamp(0.8rem, 2.6vw, 1.5rem);
     line-height: clamp(1, 2vw, 1.7);
     text-align: justify;
 }
@@ -260,9 +260,9 @@ header {
 .projects {
     border-top: 10px solid #2C54F2;
     background-color: #0125B7;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
     color: #fff;
     display: flex;
     justify-content: center;

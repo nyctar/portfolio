@@ -6,6 +6,8 @@ let colors;
 let hoverColor;
 
 function setup() {
+    noiseSeed(42); //for dev mode
+
     const container = document.getElementById("canvas-container");
     let canvas = createCanvas(container.offsetWidth, container.offsetHeight);
     canvas.parent("canvas-container");
@@ -55,6 +57,8 @@ function draw() {
             rect(px, py, spacing * 0.8, spacing * 0.8);
         }
     }
+
+    noLoop(); //for dev mode
 }
 
 function windowResized() {

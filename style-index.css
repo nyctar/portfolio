@@ -355,7 +355,7 @@ header {
 
 .footer-email {
     display: inline-block;
-    font-size: clamp(1.5rem, 4vw, 5rem);
+    font-size: clamp(1rem, 4vw, 5rem);
     font-weight: bold;
     color: #0125B7;
     text-decoration: none;
@@ -375,6 +375,7 @@ header {
     color: #0125B7;
     font-size: clamp(1rem, 2vw, 2rem);
     font-weight: normal;
+    transition: color 0.3s ease;
 }
 
 .footer-right a:hover {

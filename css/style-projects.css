@@ -22,6 +22,7 @@ html {
 }
 /* header */
 header {
+    position: relative;
     background-color: #0125B7;
     width: 100%;
     padding: 1.5vw 0;
@@ -50,25 +51,26 @@ header {
 .logo-top-right {
     position: absolute;
     top: clamp(0.15rem, 1.6vw, 6rem);
-    right: clamp(1rem, 2vw, 2rem);
-    width: clamp(0.5rem, 2.5vw, 10rem);
+    right: clamp(0.3rem, 1.5vw, 2rem);
+    width: clamp(0.5rem, 2.5vw, 12rem);
+    z-index: 999;
 }
 /* hero */
 .projects-hero {
-    min-height: 75%;
     background-color: #EAEAEA;
     color: #1F2421;
     padding: 2rem 1.5rem;
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
     text-align: center;
     position: relative;
 }
 
 .projects-hero-content {
-    margin-top: 2rem;
+    margin-top: clamp(1rem, 4vw, 2rem);
 }
 
 .project-heading {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 6vw, 4rem);
 }
 
 .project-subheading {
@@ -76,16 +78,29 @@ header {
   margin: 0.5rem 0 2rem;
 }
 .project-image {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
 }
 
+.center-overlay {
+    position: absolute;
+    top: clamp(8rem, 48vw, 18rem);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: clamp(20px, 18vw, 80px);
+}
+
 .phone-mockup {
     width: clamp(120px, 30vw, 180px);
-    border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+}
+
+.desktop-mockup {
+    width: clamp(400px, 32vw, 560px);
     margin-bottom: 3rem;
 }
 
@@ -148,8 +163,9 @@ header {
 .article {
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
-    padding: clamp(3rem, 9vh, 8rem) 1.5rem;
+    gap: clamp(1rem, 3vw, 3rem);
+    padding: clamp(2rem, 3vw, 4rem) 1.5rem;
+    padding-top: 0;
     max-width: 1000px;
     margin: 0 auto;
     color: #1F2421;
@@ -170,7 +186,6 @@ header {
 .summary-divider {
     width: 1px;
     background-color: #858786;
-    opacity: 0.4;
 }
 
 .summary {
@@ -187,45 +202,44 @@ header {
     margin-bottom: 0.25rem;
 }
 
-.summary-block p {
-    line-height: 1.4;
-}
-
 .article-section {
-    flex-basis: 100%;
-    margin-top: 3rem;
-    font-size: clamp(0.9rem, 2.4vw, 1.25rem);
+    padding: clamp(1.5rem, 4vw, 3rem) 1.5rem;
+    padding-top: 0;
+    color: #1F2421;
+    background-color: #EAEAEA;
+    margin-bottom: 3rem;
+  }
+  
+.article-section-container {
+    max-width: 950px;
+    margin: 0 auto;
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+    text-align: left;
+    font-size: clamp(0.8rem, 2.6vw, 1.5rem);
     font-family: "Space Grotesk", sans-serif;
+    justify-content: center;
 }
 
 .article-section h2 {
-    font-family: "Syncopate", sans-serif;
-    font-size: clamp(1.25rem, 3vw, 2rem);
+    font-family: "Staatliches", sans-serif;
     margin-bottom: 1rem;
     text-transform: uppercase;
-}
-  
-.article-section p {
-    line-height: 1.6;
-    max-width: 100%;
 }
 
 /* footer */
 .footer {
-    border-top: 10px solid #F243FF;
     display: flex;
     padding: 3rem 2rem 6rem 2rem;
-    background-color: #EAEAEA;
-    color: #0125B7;
+    background-color: #0125B7;
+    color: #EAEAEA;
     font-family: "Space Grotesk", sans-serif;
     font-size: clamp(0.8rem, 2vw, 2rem);
-    line-height: 1.5;
 }
 
 .footer-email {
     font-size: clamp(0.9rem, 4vw, 5rem);
     font-weight: bold;
-    color: #0125B7;
+    color: #EAEAEA;
     margin: 1rem 0;
 }
 
@@ -239,7 +253,7 @@ header {
 
 .footer-right a {
     text-decoration: none;
-    color: #0125B7;
+    color: #EAEAEA;
     font-size: clamp(0.8rem, 2vw, 2rem);
     font-weight: normal;
     transition: color 0.3s ease;

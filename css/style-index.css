@@ -82,7 +82,6 @@ header {
     font-family: "Syncopate", Helvetica, sans-serif;
     text-align: center;
     color: #EAEAEA;
-    pointer-events: none;
 }
 
 #overlay-line-1 {
@@ -203,7 +202,6 @@ header {
     right: 1.5rem;
     width: clamp(3rem, 10vw, 10rem);
     height: auto;
-    pointer-events: none;
     transform: translate(50%, 50%);
     animation: spin 20s linear infinite;
     z-index: 5;

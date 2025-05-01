@@ -39,7 +39,6 @@ header {
 .header-text {
     font-family: "Syncopate", Helvetica, sans-serif;
     width: 96%;
-    max-width: 100%;
 }
 
 .header-line {
@@ -57,16 +56,12 @@ header {
 /* landing */
 #landing {
     position: relative;
-    min-height: 0;
 }
 
 #canvas-container {
     position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
-    z-index: 0;
 }
 .logo-top-right {
     position: absolute;
@@ -76,23 +71,18 @@ header {
 }
   
 .overlay-text {
+    font-size: 7vw;
+    font-weight: bold;
+    text-transform: uppercase;
     position: absolute;
     bottom: clamp(0.5rem, 1vw, 1vw);
     left: 50%;
     transform: translateX(-50%);
     width: 96%;
-    max-width: 100%;
     font-family: "Syncopate", Helvetica, sans-serif;
     text-align: center;
     color: #EAEAEA;
     pointer-events: none;
-    z-index: 1;
-}
-
-.overlay-line {
-    font-size: 7vw;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 #overlay-line-1 {
@@ -108,7 +98,6 @@ header {
     background-color: #EAEAEA;
     height: clamp(1.5rem, 3vw, 12rem);
     color: #0125B7;
-    overflow: hidden;
     white-space: nowrap;
     width: 100%;
     display: flex;
@@ -186,25 +175,25 @@ header {
     margin-bottom: 0.5rem;
 }
 
-.cta {
+.go-to-contact {
     display: flex;
     align-items: center;
     gap: clamp(0.5rem, 2vw, 2rem);
 }
   
-.cta-link {
+.go-to-contact-link {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
 }
   
-.cta-arrow {
+.go-to-contact-arrow {
     width: clamp(0.25rem, 2vw, 1.5rem);
     height: auto;
-    transition: transform 0.2s ease;
+    transition: transform 0.3s ease;
 }
   
-.cta-link:hover .cta-arrow {
+.go-to-contact-link:hover .go-to-contact-arrow {
     transform: translateX(4px);
 }
 .about-asterisk {
@@ -212,7 +201,7 @@ header {
     position: absolute;
     bottom: 1.5rem;
     right: 1.5rem;
-    width: clamp(2rem, 10vw, 10rem);
+    width: clamp(3rem, 10vw, 10rem);
     height: auto;
     pointer-events: none;
     transform: translate(50%, 50%);
@@ -350,8 +339,6 @@ hr {
 .footer {
     border-top: 10px solid #F243FF;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 3rem 2rem 6rem 2rem;
     background-color: #EAEAEA;
     color: #0125B7;
@@ -361,11 +348,9 @@ hr {
 }
 
 .footer-email {
-    display: inline-block;
     font-size: clamp(0.9rem, 4vw, 5rem);
     font-weight: bold;
     color: #0125B7;
-    text-decoration: none;
     margin: 1rem 0;
 }
 

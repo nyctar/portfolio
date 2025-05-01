@@ -73,8 +73,6 @@ header {
     top: clamp(0.5rem, 2vw, 4rem);
     right: clamp(0.5rem, 2vw, 4rem);
     width: clamp(1.5rem, 5vw, 12rem);
-    z-index: 2;
-    pointer-events: none;
 }
   
 .overlay-text {
@@ -164,6 +162,7 @@ header {
 
 .underline {
     text-decoration: underline;
+    text-decoration-style: dashed;
     text-decoration-color: #F243FF;
     text-decoration-thickness: 2px;
     text-underline-offset: 0.2em;
@@ -172,6 +171,7 @@ header {
 .tools-line h2 {
     font-family: "Staatliches", Helvetica, sans-serif;
     text-decoration: underline;
+    text-decoration-style: dashed;
     text-decoration-color: #F243FF;
     color: #EAEAEA;
     margin-bottom: 0.5rem;
@@ -180,6 +180,7 @@ header {
 .honors-line h2 {
     font-family: "Staatliches", Helvetica, sans-serif;
     text-decoration: underline;
+    text-decoration-style: dashed;
     text-decoration-color: #F243FF;
     color: #EAEAEA;
     margin-bottom: 0.5rem;
@@ -223,6 +224,12 @@ header {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #EAEAEA;
+  }
 
 /* projects */
 .projects-content h1 {
@@ -384,6 +391,8 @@ header {
   
 /* navbar */
 nav {
+    border-top: 4px solid #F243FF;
+    text-decoration: none;
     display: flex;
     position: fixed;
     bottom: 0;

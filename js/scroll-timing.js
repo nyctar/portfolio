@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
       if (target) {
         setTimeout(() => {
           target.scrollIntoView({ behavior: "smooth" });
-        }, 500);
+        }, 250);
       }
     }
   });

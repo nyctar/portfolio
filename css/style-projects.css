@@ -100,7 +100,7 @@ header {
 }
 
 .desktop-mockup {
-    width: clamp(400px, 32vw, 560px);
+    width: clamp(400px, 32vw, 650px);
     margin-bottom: 3rem;
 }
 

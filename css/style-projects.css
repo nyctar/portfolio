@@ -70,12 +70,12 @@ header {
 }
 
 .project-heading {
-  font-size: clamp(2rem, 6vw, 4rem);
+    font-size: clamp(2rem, 6vw, 4rem);
 }
 
 .project-subheading {
-  font-size: clamp(1rem, 3vw, 2rem);
-  margin: 0.5rem 0 2rem;
+    font-size: clamp(1rem, 3vw, 2rem);
+    margin: 0.5rem 0 2rem;
 }
 .project-image {
     position: relative;

@@ -124,7 +124,7 @@ header {
 .about {
     border-top: 10px solid #0F3AE6;
     position: relative;
-    min-height: 95vh;
+    min-height: clamp(700px, 60vw, 1500px);
     background-color: #0125B7;
     align-items: center;
     justify-content: center;
@@ -132,7 +132,7 @@ header {
     box-sizing: border-box;
     color: #EAEAEA;
     font-family: "Space Grotesk", sans-serif;
-    font-size: clamp(0.8rem, 2.6vw, 1.5rem);
+    font-size: clamp(0.8rem, 1.5vw, 1.5rem);
     line-height: clamp(1, 2vw, 1.7);
     text-align: left;
 }

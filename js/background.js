@@ -22,7 +22,7 @@ function setup() {
         color('#0F3AE6'),
         color('#2C54F2')
     ];
-    hoverColor = color('#F243FF');
+    hoverColor = color('#F675FF');
 }
 
 function draw() {

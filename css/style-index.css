@@ -158,18 +158,22 @@ header {
 
 .tools-line h2 {
     font-family: "Staatliches", Helvetica, sans-serif;
+    /*
     text-decoration: underline;
     text-decoration-style: dashed;
     text-decoration-color: #F243FF;
+    */
     color: #EAEAEA;
     margin-bottom: 0.5rem;
 }
 
 .honors-line h2 {
     font-family: "Staatliches", Helvetica, sans-serif;
+    /*
     text-decoration: underline;
     text-decoration-style: dashed;
     text-decoration-color: #F243FF;
+    */
     color: #EAEAEA;
     margin-bottom: 0.5rem;
 }

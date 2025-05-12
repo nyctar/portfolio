@@ -46,7 +46,7 @@ header {
     line-height: 1.2;
 }
 .header-keyword {
-    color: #F675FF;
+    color: #F243FF;
 }
 
 .logo-top-right {
@@ -128,12 +128,12 @@ header {
 }
 
 .footer-right a:hover {
-    color: #F675FF;
+    color: #F243FF;
 }
   
 /* navbar */
 nav {
-    border-top: 4px solid #F675FF;
+    border-top: 4px solid #F243FF;
     text-decoration: none;
     display: flex;
     position: fixed;
@@ -168,19 +168,19 @@ nav a {
 }
 
 .nav-home:hover {
-    background-color: #F675FF;
+    background-color: #F243FF;
     color: #0125B7;
     font-weight: bold;
 }
 
 .nav-about:hover {
-    background-color: #F675FF;
+    background-color: #F243FF;
     color: #0F3AE6;
     font-weight: bold;
 }
 
 .nav-projects:hover {
-    background-color: #F675FF;
+    background-color: #F243FF;
     color: #2C54F2;
     font-weight: bold;
 }
@@ -195,11 +195,11 @@ nav a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #F675FF;
+    background-color: #F243FF;
     border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #F675FF;
+    background-color: #F243FF;
     border: 2px solid #858786;
 }

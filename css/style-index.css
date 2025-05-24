@@ -202,9 +202,9 @@ header {
 .about-asterisk {
     color: #EAEAEA;
     position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    width: clamp(3rem, 10vw, 10rem);
+    bottom: clamp(1.5rem, 3vw, 3rem);
+    right: clamp(1.5rem, 3vw, 3rem);
+    width: clamp(3rem, 10vw, 9rem);
     height: auto;
     transform: translate(50%, 50%);
     animation: spin 20s linear infinite;
